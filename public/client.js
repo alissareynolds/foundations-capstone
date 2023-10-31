@@ -14,3 +14,7 @@ const getCats = () => {
     return axios.get("http://localhost:8000/api/animals?species=Cat");
 };
 
+const getFavorites = () => {
+    return axios.get("http://localhost:8000/api/users/1/favorites");
+};
+

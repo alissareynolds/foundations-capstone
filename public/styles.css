@@ -147,6 +147,18 @@ a:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#top-line {
+display: flex;
+flex-direction: row;
+align-items: end;
+gap: 40px;
+margin: 0px;
+}
+
+#heart-off {
+    width: 40px;
+}
+
 .animal-name {
     margin: 0px;
     padding-bottom: 5px;

@@ -293,7 +293,20 @@ module.exports = {
         }
 
     },
-
+    getFavorites: (req, res) => {
+        sequelize.query(`
+        
+        SELECT * FROM favorites 
+        JOIN animals ON 
+        animals.animal_id = favorites.animal_id
+        WHERE favorites.user_id = 1; 
+        
+        `).then((dbRes) => {
+            res.status(200).send(dbRes[0])
+        }).catch((error) => {
+            res.status(500).send(error)
+        })
+    },
 };
 
 // join is_favorite that returns true if the id exsists in the favorites table - post update the record so its a favorite in the data base
