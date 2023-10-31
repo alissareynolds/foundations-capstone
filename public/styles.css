@@ -80,6 +80,8 @@ a:hover {
     padding-bottom: 4px;
 }
 
+
+
 .centered {
     position: absolute;
     top: 70%;
@@ -102,6 +104,16 @@ a:hover {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     text-shadow: 2px 2px rgb(169, 190, 178);
+}
+
+#card-container {
+    justify-self: center;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 75px;
+    justify-content: center;
 }
 
 .animal-card {
@@ -141,6 +153,7 @@ a:hover {
 }
 
 .animal-breed {
+    text-align: center;
     margin: 0px;
 }
 

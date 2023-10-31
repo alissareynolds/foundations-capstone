@@ -251,12 +251,20 @@ module.exports = {
         `)
     },
     getAnimals: (req, res) => {
-        const species = req.params.species;
+        const species = req.query.species;
+        const userId = 1;
 
         if (!species) {
             sequelize.query(`
         
-            SELECT * FROM animals;
+            SELECT 
+                CASE 
+                    WHEN user_id = ${userId} THEN true
+                ELSE false
+            END AS isFavorite,
+            * FROM animals
+            LEFT JOIN favorites on animals.animal_id = favorites.animal_id
+            ORDER BY animals.animal_id ASC;
             
             `).then((dbRes) => {
                 res.status(200).send(dbRes[0])
@@ -266,10 +274,16 @@ module.exports = {
         }
         else {
             sequelize.query(`
-        
-            SELECT * FROM animals 
-            JOIN species ON animals.animal_id = species.species_id
-            WHERE species.species_name = ${species};
+            SELECT 
+                CASE 
+                    WHEN user_id = ${userId} THEN true
+                ELSE false
+            END AS isFavorite,
+            * FROM animals
+            JOIN species ON animals.species_id = species.species_id
+            LEFT JOIN favorites on animals.animal_id = favorites.animal_id
+            WHERE species.species_name ILIKE '${species}'
+            ORDER BY animals.animal_id ASC;
             
             `).then((dbRes) => {
                 res.status(200).send(dbRes[0])

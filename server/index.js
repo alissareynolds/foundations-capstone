@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const {SERVER_PORT} = process.env;
+const {seed , getAnimals} = require('./controller.js');
 
 
 app.use(express.json());
@@ -10,7 +11,6 @@ app.use(cors());
 
 app.post('/seed', seed);
 
-const { getAnimals } = require('./controller')
 
 app.get("/api/animals", getAnimals);
 

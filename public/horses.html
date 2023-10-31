@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
     <script src="client.js"></script>
+    <script src="horses.js"></script>
 </head>
 
 <body>
@@ -35,8 +36,10 @@
                 src="https://th.bing.com/th/id/R.ad5a3e6149af9e443141b2bbf6648fe7?rik=q2HIApzzz2ezfg&riu=http%3a%2f%2fwww.ci.weatherford.tx.us%2fImageRepository%2fDocument%3fdocumentID%3d13805&ehk=NsRT4mNiKlvnAiF7%2fY6ykoB8rTDjAKs6Fe5re5FUpJg%3d&risl=&pid=ImgRaw&r=0"
                 alt="weatherford animal rescue logo"></a>
         </div>
-        <div class="header">
-            <p> </p>
+        <div id="top-right" class="header">
+            <li>
+                <a href="favorites.html">FAVORITES</a>
+            </li>
         </div>
     </header>
     <main id="horse-main">
@@ -48,149 +51,9 @@
             </div>
         </div>
 
-        <section id="first-row">
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Dakota</h4>
-                        <p class="animal-breed">Mustang</p>
-                    </div>
-                    <div class="animal-image container" >
-                        <img class="image" src="/images/dakota.png" alt="an adorable mustang named Dakota who is up for adoption">
-                        <div class="middle">
-                            <button class="text">Adopt Me!</button>
-                          </div>
-                    </div>
-                </article>
-            </div>
+        <section id="card-container">
 
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Red</h4>
-                        <p class="animal-breed">Grade</p>
-                    </div>
-                    <div class="animal-image container">
-                        <img class="image" src="/images/red.png" alt="an adoptable gelding named Red">
-                        <div class="middle">
-                            <button class="text">Adopt Me!</button>
-                          </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Diesel</h4>
-                        <p class="animal-breed">Mustang</p>
-                    </div>
-                    <div class="animal-image container">
-                        <img class="image" src="/images/diesel.png" alt="a male german shepherd named Gideon who is up for adoption">
-                        <div class="middle">
-                            <button class="text">Adopt Me!</button>
-                          </div>
-                    </div>
-                </article>
-            </div>
         </section>
-
-        <section id="second-row">
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Ryder</h4>
-                        <p class="animal-breed">Quarter Horse</p>
-                    </div>
-                    <div class="animal-image container">
-                        <img class="image" src="/images/ryder.png" alt="a male belgian malinois named Apollo who is up for adoption">
-                        <div class="middle">
-                            <button class="text">Adopt Me!</button>
-                          </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Elli</h4>
-                        <p class="animal-breed">Norwegian Fjord</p>
-                    </div>
-                    <div class="animal-image container">
-                        <img class="image" src="/images/elli.png" alt="a female pug/terrier mix named Bette who is up for adoption">
-                        <div class="middle">
-                            <button class="text">Adopt Me!</button>
-                          </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Bonnie</h4>
-                        <p class="animal-breed">Mustang</p>
-                    </div>
-                    <div class="animal-image container">
-                        <img class="image" src="/images/bonnie.png" alt="a male siberian huskey named Dodge who is up for adoption">
-                        <div class="middle">
-                            <button class="text">Adopt Me!</button>
-                          </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="third-row">
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Rory</h4>
-                        <p class="animal-breed">Grade</p>
-                    </div>
-                    <div class="animal-image container">
-                        <img class="image" src="/images/rory.png" alt="a male chihuahua named Troy who is up for adoption">
-                        <div class="middle">
-                            <button class="text">Adopt Me!</button>
-                          </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Charley</h4>
-                        <p class="animal-breed">American Quarter Horse</p>
-                    </div>
-                    <div class="animal-image container">
-                        <img class="image" src="/images/charley.png" alt="an adorable pomeranian named Edgar who is up for adoption">
-                        <div class="middle">
-                            <button class="text">Adopt Me!</button>
-                          </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="animal-cards">
-                <article class="animal-card">
-                    <div class="animal-info">
-                        <h4 class="animal-name action">Blue</h4>
-                        <p class="animal-breed">Mustang</p>
-                    </div>
-                    <div class="animal-image container">
-                        <img class="image" src="/images/blue.png"
-                            alt="an adorable carolina dog named Dottie who is up for adoption">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                    </div>
-                </article>
-            </div>
-    </section>
-    
-
     </main>
     <footer>
         

@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
     <script src="client.js"></script>
+    <script src="dogs.js"></script>
 </head>
 
 <body>
@@ -35,191 +36,23 @@
                     src="https://th.bing.com/th/id/R.ad5a3e6149af9e443141b2bbf6648fe7?rik=q2HIApzzz2ezfg&riu=http%3a%2f%2fwww.ci.weatherford.tx.us%2fImageRepository%2fDocument%3fdocumentID%3d13805&ehk=NsRT4mNiKlvnAiF7%2fY6ykoB8rTDjAKs6Fe5re5FUpJg%3d&risl=&pid=ImgRaw&r=0"
                     alt="weatherford animal rescue logo"></a>
         </div>
-        <div class="header">
-
+        <div id="top-right" class="header">
+            <li>
+                <a href="favorites.html">FAVORITES</a>
+            </li>
         </div>
     </header>
 
     <main id="dog-main">
-            <div id="dog-container">
-                <img id="dog-page-banner" class="parallax" src="https://s3.amazonaws.com/CFSV2/siteimages/ptg/144947-4.jpg"
-                    alt="a adorable dog in a field">
-                <div id="dog-banner-text">
-                    <!-- <h2>Adoptable Dogs</h2> -->
-                </div>
+        <div id="dog-container">
+            <img id="dog-page-banner" class="parallax" src="https://s3.amazonaws.com/CFSV2/siteimages/ptg/144947-4.jpg"
+                alt="a adorable dog in a field">
+            <div id="dog-banner-text">
+                <!-- <h2>Adoptable Dogs</h2> -->
             </div>
-            <section id="first-row">
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Jeffery</h4>
-                            <p class="animal-breed">Labrador Retriever</p>
-                        </div>
-                        <div class="animal-image container" >
-                            <img class="image" src="/images/jeffery.png" alt="an adorable lab named Jeffery who is up for adoption">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                        </div>
-                    </article>
-                </div>
-    
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Bailey</h4>
-                            <p class="animal-breed">Pit Bull</p>
-                        </div>
-                        <div class="animal-image container">
-                            <img class="image" src="/images/bailey.jpg" alt="an adoptable pit bull named bailey">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                        </div>
-                    </article>
-                </div>
-    
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Gideon</h4>
-                            <p class="animal-breed">German Shepherd</p>
-                        </div>
-                        <div class="animal-image container">
-                            <img class="image" src="/images/gideon.png" alt="a male german shepherd named Gideon who is up for adoption">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-    
-            <section id="second-row">
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Apollo</h4>
-                            <p class="animal-breed">Belgian Malinois</p>
-                        </div>
-                        <div class="animal-image container">
-                            <img class="image" src="/images/apollo.png" alt="a male belgian malinois named Apollo who is up for adoption">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                        </div>
-                    </article>
-                </div>
-    
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Bette</h4>
-                            <p class="animal-breed">Pug/Terrier Mix</p>
-                        </div>
-                        <div class="animal-image container">
-                            <img class="image" src="/images/bette.png" alt="a female pug/terrier mix named Bette who is up for adoption">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                        </div>
-                    </article>
-                </div>
-    
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Dodge</h4>
-                            <p class="animal-breed">Siberian Husky</p>
-                        </div>
-                        <div class="animal-image container">
-                            <img class="image" src="/images/dodge.png" alt="a male siberian huskey named Dodge who is up for adoption">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-    
-            <section id="third-row">
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Troy</h4>
-                            <p class="animal-breed">Chihuahua</p>
-                        </div>
-                        <div class="animal-image container">
-                            <img class="image" src="/images/troy.png" alt="a male chihuahua named Troy who is up for adoption">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                        </div>
-                    </article>
-                </div>
-    
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Edgar</h4>
-                            <p class="animal-breed">Pomeranian</p>
-                        </div>
-                        <div class="animal-image container">
-                            <img class="image" src="/images/edgar.png" alt="an adorable pomeranian named Edgar who is up for adoption">
-                            <div class="middle">
-                                <button class="text">Adopt Me!</button>
-                              </div>
-                        </div>
-                    </article>
-                </div>
-    
-                <div class="animal-cards">
-                    <article class="animal-card">
-                        <div class="animal-info">
-                            <h4 class="animal-name action">Dottie</h4>
-                            <p class="animal-breed">Carolina Dog</p>
-                        </div>
-                        <div class="animal-image container">
-                            <img class="image" src="/images/dottie.png"
-                                alt="an adorable carolina dog named Dottie who is up for adoption">
-                                <div class="middle">
-                                    <button class="text">Adopt Me!</button>
-                                  </div>
-                        </div>
-                    </article>
-                </div>
+        </div>
+        <section id="card-container">
         </section>
-        
-
-
-
-        <!-- 
-           
-            <div id="loretta-card"><img id="loretta"
-                    src="https://static.wixstatic.com/media/1aca97_c60f47294342455890d4bbcdc365f7c2~mv2.jpeg/v1/fill/w_1179,h_1217,al_c,q_90/1aca97_c60f47294342455890d4bbcdc365f7c2~mv2.webp"
-                    alt="an adorable german shepherd named Loretta Lynn who is up for adoption">
-                <div class="container">
-                    <h4 id="name-loretta">Loretta Lynn</h4>
-                    <p id="loretta-breed">German Shepherd</p>
-                </div>
-            </div>
-            <div id="ginger-card"><img id="ginger"
-                    src="https://static.wixstatic.com/media/1aca97_ba5721f51fd341b5ab041fc33354b6e9~mv2.jpeg/v1/fill/w_1178,h_1392,al_c,q_90/1aca97_ba5721f51fd341b5ab041fc33354b6e9~mv2.webp"
-                    alt="an adorable chihuahua named Ginger who is up for adoption">
-                <div class="container">
-                    <h4 id="name-ginger">Ginger</h4>
-                    <p id="ginger-breed">Chihuahua</p>
-                </div>
-            </div>
-            <div id="echo-card"><img id="echo"
-                    src="https://static.wixstatic.com/media/1aca97_ddc3b63ebe5849bc9a54c42a65dd86e0~mv2.jpeg/v1/fill/w_1134,h_1392,al_c,q_90/1aca97_ddc3b63ebe5849bc9a54c42a65dd86e0~mv2.webp"
-                    alt="an adorable doxie/chihuahua named Echo who is up for adoption">
-                <div class="container">
-                    <h4 id="name-echo">Echo</h4>
-                    <p id="echo-breed">Doxie/Chihuahua</p>
-                </div>
-            </div>
-        </div> -->
     </main>
     <footer>
 
