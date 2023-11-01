@@ -38,18 +38,31 @@
         </div>
         <div id="top-right" class="header">
             <li>
-                <a href="favorites.html">FAVORITES</a>
+                <a href="favorites.html"><img id="favorites-logo" src="/images/heart-on.png" alt="favorites page link image"></a>
             </li>
         </div>
     </header>
     <main id="cat-main">
-        <div id="banner-container-3">
-            <img id="cat-page-banner" src="https://www.pedigreepens.co.uk/wp-content/uploads/2020/12/cat-banner.jpg"
-                alt="cat banner">
-            <div id="cat-banner-text">
-                <!-- <h2>Adoptable Dogs</h2> -->
-            </div>
-        </div>
+        
+        <style>
+            body,
+            html {
+                height: 100%;
+            }
+
+            .cat-parallax {
+                background-image: url("https://www.pedigreepens.co.uk/wp-content/uploads/2020/12/cat-banner.jpg");
+
+                height: 100%;
+
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+
+        <div class="cat-parallax"></div>
         <section id="card-container">
         </section>    
 </main>

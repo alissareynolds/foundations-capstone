@@ -18,3 +18,10 @@ const getFavorites = () => {
     return axios.get("http://localhost:8000/api/users/1/favorites");
 };
 
+const saveFavorites = () => {
+    axios.post("http://localhost:8000/api/user/1/favorites")
+};
+
+const deleteFavorites = () => {
+    axios.delete()
+};

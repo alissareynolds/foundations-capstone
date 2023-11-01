@@ -80,7 +80,17 @@ a:hover {
     padding-bottom: 4px;
 }
 
+#top-right {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#favorites-logo {
+    max-height: 7vh;
+    width: auto;
+}
 
 .centered {
     position: absolute;
@@ -198,35 +208,6 @@ div.animal-image>img {
 }
 
 
-#first-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
-}
-
-#second-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 30px;
-}
-
-
-#third-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 30px;
-}
 
 #banner-container {
     position: relative;
@@ -316,6 +297,7 @@ div.animal-image>img {
             "main"
             "footer";
     }
+
 }
 
 @media only screen and (min-width: 451px) and (max-width: 1199px) {

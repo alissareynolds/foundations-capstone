@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <link rel="icon" href="https://www.clipartmax.com/png/small/163-1633355_dog-face-head-animal-dog-dog-dog-dog-dog-dog-head-silhouette.png">
+    <link rel="icon"
+        href="https://www.clipartmax.com/png/small/163-1633355_dog-face-head-animal-dog-dog-dog-dog-dog-dog-head-silhouette.png">
     <title>Weatherford Animal Sanctuary</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
@@ -14,7 +15,7 @@
 
 <body>
     <header>
-        <div id="top-left" class="header"> 
+        <div id="top-left" class="header">
             <nav>
                 <ul id="nav-ul">
                     <li>
@@ -31,40 +32,90 @@
         </div>
         <div id="top-center" class="header">
             <a id="logo-img" href="index.html"><img id="logo"
-                src="https://th.bing.com/th/id/R.ad5a3e6149af9e443141b2bbf6648fe7?rik=q2HIApzzz2ezfg&riu=http%3a%2f%2fwww.ci.weatherford.tx.us%2fImageRepository%2fDocument%3fdocumentID%3d13805&ehk=NsRT4mNiKlvnAiF7%2fY6ykoB8rTDjAKs6Fe5re5FUpJg%3d&risl=&pid=ImgRaw&r=0"
-                alt="weatherford animal rescue logo"></a>
+                    src="https://th.bing.com/th/id/R.ad5a3e6149af9e443141b2bbf6648fe7?rik=q2HIApzzz2ezfg&riu=http%3a%2f%2fwww.ci.weatherford.tx.us%2fImageRepository%2fDocument%3fdocumentID%3d13805&ehk=NsRT4mNiKlvnAiF7%2fY6ykoB8rTDjAKs6Fe5re5FUpJg%3d&risl=&pid=ImgRaw&r=0"
+                    alt="weatherford animal rescue logo"></a>
         </div>
         <div id="top-right" class="header">
             <li>
-                <a href="favorites.html">FAVORITES</a>
+                <a href="favorites.html"><img id="favorites-logo" src="/images/heart-on.png"
+                        alt="favorites page link image"></a>
             </li>
         </div>
     </header>
     <main>
-       <div id="home-page-photo">
-        <img id="home-page-puppies" src="https://article.images.consumerreports.org/prod/content/dam/CRO%20Images%202016/Health/December/CR-Hero-Health-pet-allergies-12-16" alt="adorable kitten and puppy banner photo">
-        <div class="centered">Saving lives, One pet at a time</div>
-        <div class="sub-heading">Adopt your best friend today</div>
-       </div>
-       <article class="animal-card">
-        <div class="animal-info">
-            <div id="top-line">
-                <h4 class="animal-name action">Scout</h4>
-                <img id="heart-off" src="/images/heart-off.png">
+        <!-- https://article.images.consumerreports.org/prod/content/dam/CRO%20Images%202016/Health/December/CR-Hero-Health-pet-allergies-12-16 -->
+        <style>
+            body,
+            html {
+                height: 100%;
+            }
+
+            .parallax {
+                background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Pics-dogs-and-cats-wallpaper-HD.jpg");
+
+                height: 100%;
+
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .parallax-2 {
+                background-image: url("https://img1.goodfon.com/wallpaper/nbig/a/7c/sobaka-vzglyad-drug-lavandy-2004.jpg");
+
+                height: 100%;
+
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .parallax-3 {
+                background-image: url("https://i.pinimg.com/originals/7f/ef/f0/7feff048aa78f0873cd640840af7ebcc.jpg");
+
+                height: 100%;
+
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+        <div class="parallax"></div>
+
+        <div style="height:500px;background-color:rgb(248, 241, 241);font-size:36px">
+
+        </div>
+
+        <div class="parallax-2"></div>
+
+        <div style="height:500px;background-color:rgb(248, 241, 241);font-size:36px">
+          
+    </div>
+
+        <div class="parallax-3"></div> 
+
+        <article class="animal-card">
+            <div class="animal-info">
+                <div id="top-line">
+                    <h4 class="animal-name action">Scout</h4>
+                    <img id="heart-off" src="/images/heart-off.png">
+                </div>
+
+                <p class="animal-breed">Domestic Short Hair</p>
             </div>
-           
-            <p class="animal-breed">Domestic Short Hair</p>
-        </div>
-        <div class="animal-image container">
-            <img class="image" src="/images/scout.png" alt="an adorable cat named Scout who is up for adoption">
-            <div class="middle">
-                <button class="text">Adopt Me!</button>
-              </div>
-        </div>
-    </article>  
+            <div class="animal-image container">
+                <img class="image" src="/images/scout.png" alt="an adorable cat named Scout who is up for adoption">
+                <div class="middle">
+                    <button class="text">Adopt Me!</button>
+                </div>
+            </div>
+        </article>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
