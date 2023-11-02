@@ -369,10 +369,15 @@ padding-bottom: 40px;
 
 .profile-imgs {
 width: 500px;
-margin-left: 33%;
 margin-bottom: 30px;
 border: 5px ridge rgb(169, 190, 178);
 border-radius: 10px;
+}
+
+.profile-img-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 450px) {

@@ -37,7 +37,7 @@ function generateProfile(animal) {
         const imageContainer = document.createElement('div');
         imageContainer.classList.add('profile-image');
         imageContainer.innerHTML = `
-        <img class="profile-imgs" src="${picture.url}"/>        
+        <div class="profile-img-flex"><img class="profile-imgs" src="${picture.url}"/></div>        
         `;
         profile.appendChild(imageContainer);
     });
