@@ -42,15 +42,15 @@ function generateCard(animal) {
         if (animal.isfavorite) {
             axios.delete("http://localhost:8000/api/user/1/favorites/" + animal.animal_id).then(() => {
                 heartImage.setAttribute("src", "/images/heart-off.png");
-                animal.isfavorite = false;    
+                animal.isfavorite = false;
             })
-        } else {    
+        } else {
             axios.post("http://localhost:8000/api/user/1/favorites", { animalId: animal.animal_id })
-            .then(() => {
-                heartImage.setAttribute("src", "/images/heart-on.png");
-                animal.isfavorite = true;
-            });
-        }       
+                .then(() => {
+                    heartImage.setAttribute("src", "/images/heart-on.png");
+                    animal.isfavorite = true;
+                });
+        }
     });
     return card;
 }

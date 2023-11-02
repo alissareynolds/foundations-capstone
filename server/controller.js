@@ -363,9 +363,9 @@ module.exports = {
     WHERE animals.animal_id = ${animalId}
         
         `).then((dbRes) => {
-            if (dbRes[0].length == 0){
+            if (dbRes[0].length == 0) {
                 res.status(404).send();
-            }else {
+            } else {
                 const animal = dbRes[0][0];
                 sequelize.query(`
                 SELECT * FROM pictures WHERE animal_id = ${animalId}
@@ -374,7 +374,7 @@ module.exports = {
                     res.status(200).send(animal);
                 })
             }
-            
+
         }).catch((error) => {
             res.status(500).send(error)
         })

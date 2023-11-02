@@ -4,5 +4,4 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(cats, 'cats');
         displayCards(cats);
     });
-    
 });

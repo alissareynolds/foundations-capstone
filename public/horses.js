@@ -4,5 +4,5 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(horses, 'horses');
         displayCards(horses);
     });
-    
+
 });

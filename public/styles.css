@@ -93,10 +93,10 @@ a:hover {
 }
 
 .heart {
-width: 35px;
-align-self: flex-start;
-padding-bottom: 0px;
-margin: 0px;
+    width: 35px;
+    align-self: flex-start;
+    padding-bottom: 0px;
+    margin: 0px;
 }
 
 .centered {
@@ -270,7 +270,7 @@ div.animal-image>img {
     margin-bottom: 0px;
 }
 
-#about-img{
+#about-img {
     width: 25%;
     margin-right: 150px;
     border: ridge 5px rgb(169, 190, 178);
@@ -361,17 +361,17 @@ div.animal-image>img {
 }
 
 .profile-info {
-font-size: 20px;
-padding-left: 50px;
-padding-right: 50px;
-padding-bottom: 40px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
 }
 
 .profile-imgs {
-width: 500px;
-margin-bottom: 30px;
-border: 5px ridge rgb(169, 190, 178);
-border-radius: 10px;
+    width: 500px;
+    margin-bottom: 30px;
+    border: 5px ridge rgb(169, 190, 178);
+    border-radius: 10px;
 }
 
 .profile-img-flex {

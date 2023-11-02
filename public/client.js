@@ -1,5 +1,5 @@
 const getAnimals = () => {
-   return axios.get("http://localhost:8000/api/animals/");
+    return axios.get("http://localhost:8000/api/animals/");
 };
 
 const getHorses = () => {
@@ -19,11 +19,11 @@ const getFavorites = () => {
 };
 
 const saveFavorites = () => {
-    return axios.post("http://localhost:8000/api/user/1/favorites", );
+    return axios.post("http://localhost:8000/api/user/1/favorites",);
 };
 
 const deleteFavorites = () => {
-    return axios.delete("http://localhost:8000/api/user/1/favorites", );
+    return axios.delete("http://localhost:8000/api/user/1/favorites",);
 };
 
 const getProfile = (id) => {

@@ -1,6 +1,6 @@
 let animals = [];
 
-document.addEventListener('DOMContentLoaded', ($event) => {
+document.addEventListener('DOMContentLoaded', () => {
     getFavorites().then(result => {
         animals = result.data;
         displayCards(animals);
@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', ($event) => {
         cardContainer.addEventListener('click', (event) => {
             const id = event.target.id;
 
-            if (id){
-                animals = animals.filter(animal => animal.animal_id != id); 
+            if (id) {
+                animals = animals.filter(animal => animal.animal_id != id);
                 displayCards(animals);
             }
         });

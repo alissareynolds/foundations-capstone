@@ -2,8 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const {SERVER_PORT} = process.env;
-const {seed , getAnimals, getFavorites, saveFavorites, deleteFavorites, getProfile} = require('./controller.js');
+const { SERVER_PORT } = process.env;
+const { seed, getAnimals, getFavorites, saveFavorites, deleteFavorites, getProfile } = require('./controller.js');
 
 
 app.use(express.json());
