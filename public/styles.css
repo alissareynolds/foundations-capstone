@@ -364,6 +364,15 @@ div.animal-image>img {
 font-size: 20px;
 padding-left: 50px;
 padding-right: 50px;
+padding-bottom: 40px;
+}
+
+.profile-imgs {
+width: 500px;
+margin-left: 33%;
+margin-bottom: 30px;
+border: 5px ridge rgb(169, 190, 178);
+border-radius: 10px;
 }
 
 @media only screen and (min-width: 450px) {

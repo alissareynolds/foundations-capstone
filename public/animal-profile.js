@@ -24,10 +24,10 @@ function generateProfile(animal) {
     <h1 class="profile-name">${animal.name}</h1>
     <img class="profile-thumbnail" src="${animal.thumbnail}">
     <section class="profile-bar"><h3 class="profile-breed">${animal.breed}</h3>
-    <h4 class="profile-birthdate">${animal.birthdate}</h4>
-    <h4 class="profile-color">${animal.color}</h4>
-    <h4 class="profile-height">${animal.height}</h4>
-    <h4 class="profile-weight">${animal.weight}</h4></section>
+    <h3 class="profile-birthdate">${animal.birthdate}</h3>
+    <h3 class="profile-color">${animal.color}</h3>
+    <h3 class="profile-height">${animal.height}</h3>
+    <h3 class="profile-weight">${animal.weight}</h3></section>
     
     <p class="profile-info">${animal.info}</p>
     
@@ -37,7 +37,7 @@ function generateProfile(animal) {
         const imageContainer = document.createElement('div');
         imageContainer.classList.add('profile-image');
         imageContainer.innerHTML = `
-        <img src="${picture.url}"/>        
+        <img class="profile-imgs" src="${picture.url}"/>        
         `;
         profile.appendChild(imageContainer);
     });
