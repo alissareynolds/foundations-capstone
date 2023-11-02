@@ -48,9 +48,11 @@ module.exports = {
         );
 
         CREATE TABLE favorites (
-            favorites_id SERIAL PRIMARY KEY,
-            user_id INT REFERENCES users(user_id),
-            animal_id INT REFERENCES animals(animal_id)
+            animal_id int NOT NULL,
+            user_id int NOT NULL,
+            CONSTRAINT PK_animal_user PRIMARY KEY(animal_id, user_id),
+            CONSTRAINT FK_animal_user_animal_id FOREIGN KEY(animal_id) REFERENCES animals(animal_id),
+            CONSTRAINT FK_animal_user_user_id FOREIGN KEY(user_id) REFERENCES users(user_id)
         );
         
         INSERT INTO species (species_name)
@@ -291,13 +293,20 @@ module.exports = {
 
     },
 
-    getFavorites: (req, res) => {
+    getFavorites: (req, res) => {   
+        const userId = req.params.id;
+
         sequelize.query(`
         
-        SELECT * FROM favorites 
+        SELECT 
+                CASE 
+                    WHEN user_id = ${userId} THEN true
+                ELSE false
+            END AS isFavorite,
+        * FROM favorites 
         JOIN animals ON 
         animals.animal_id = favorites.animal_id
-        WHERE favorites.user_id = 1; 
+        WHERE favorites.user_id = ${userId}; 
         
         `).then((dbRes) => {
             res.status(200).send(dbRes[0])
@@ -307,28 +316,34 @@ module.exports = {
     },
 
     saveFavorites: (req, res) => {
-        sequelize.query(`
         
-        INSERT INTO favorites (user_id, animal_id)
-        VALUES (${req.params.id}, ${req.body.animalId});
+        sequelize.query(`
+
+        INSERT INTO favorites (animal_id, user_id) VALUES (${req.body.animalId}, ${req.params.id})
+        ON CONFLICT (animal_id, user_id) 
+        DO UPDATE SET animal_id=${req.body.animalId}, user_id=${req.params.id};
+
 
         `).then((dbRes) => {
             res.status(200).send(dbRes[0])
         }).catch((error) => {
             res.status(500).send(error)
         })
-        
+
     },
 
     deleteFavorites: (req, res) => {
+        console.log('body', req.body)
+        const animalId = req.params.animalId;
+        const userId = req.params.id;
+        console.log(animalId, userId);
         sequelize.query(`
         
         DELETE FROM FAVORITES 
-        WHERE animal_id = ${req.params.id}
-      
-
+        WHERE animal_id = ${animalId} AND user_id = ${userId}
+    
         `).then((dbRes) => {
-            res.status(200).send(dbRes[0])
+            res.status(200).send(dbRes)
         }).catch((error) => {
             res.status(500).send(error)
         })

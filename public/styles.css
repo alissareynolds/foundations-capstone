@@ -92,6 +92,16 @@ a:hover {
     width: auto;
 }
 
+.heart {
+width: 40px;
+}
+
+.top-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
 .centered {
     position: absolute;
     top: 70%;

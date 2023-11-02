@@ -1,4 +1,3 @@
-let clicked = false;
 
 function displayCards(animals) {
     let container = document.getElementById('card-container');
@@ -6,29 +5,28 @@ function displayCards(animals) {
     animals.forEach(animal => {
         const card = generateCard(animal);
         container.appendChild(card);
-        let heartImage = document.getElementById(`${animal.animal_id}`);
-        heartImage.addEventListener('click', () => {
-            if (clicked) {
-                heartImage.setAttribute("src", "/images/heart-off.png");
-                axios.delete("http://localhost:8000/api/user/1/favorites", { animalId: animal.animal_id })
-            } else {
-                heartImage.setAttribute("src", "/images/heart-on.png");
-                axios.post("http://localhost:8000/api/user/1/favorites", { animalId: animal.animal_id })
-            }
-            clicked = !clicked;
-        });
+
 
     });
 };
 
 function generateCard(animal) {
+    let heartSrc;
+    if (animal.isfavorite) {
+        heartSrc = "/images/heart-on.png";
+    } else {
+        heartSrc = "/images/heart-off.png"
+    }
+
     const card = document.createElement('article');
     card.classList.add('animal-card');
     card.innerHTML = `
-  
+    
     <div class="animal-info">
-    <button ><img id="${animal.animal_id}" src="/images/heart-off.png"></button>
-        <h4 class="animal-name action">${animal.name}</h4>
+    <div class="top-line">
+    <h4 class="animal-name action">${animal.name}</h4>
+    <img id="${animal.animal_id}" src="${heartSrc}" class="heart">
+        </div>
         <p class="animal-breed">${animal.breed}</p>
     </div>
     <div class="animal-image container" >
@@ -37,6 +35,22 @@ function generateCard(animal) {
             <button class="text">Adopt Me!</button>
             </div>
     </div>`
+    
+    let heartImage = card.querySelector('.heart');
+    heartImage.addEventListener('click', () => {
+        if (animal.isfavorite) {
+            axios.delete("http://localhost:8000/api/user/1/favorites/" + animal.animal_id).then(() => {
+                heartImage.setAttribute("src", "/images/heart-off.png");
+                animal.isfavorite = false;    
+            })
+        } else {    
+            axios.post("http://localhost:8000/api/user/1/favorites", { animalId: animal.animal_id })
+            .then(() => {
+                heartImage.setAttribute("src", "/images/heart-on.png");
+                animal.isfavorite = true;
+            });
+        }       
+    });
     return card;
 }
 

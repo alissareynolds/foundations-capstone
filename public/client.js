@@ -19,9 +19,9 @@ const getFavorites = () => {
 };
 
 const saveFavorites = () => {
-    axios.post("http://localhost:8000/api/user/1/favorites")
+    axios.post("http://localhost:8000/api/user/1/favorites", )
 };
 
 const deleteFavorites = () => {
-    axios.delete()
+    axios.delete("http://localhost:8000/api/user/1/favorites", )
 };

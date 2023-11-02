@@ -15,7 +15,7 @@ app.post('/seed', seed);
 app.get("/api/animals", getAnimals);
 app.get("/api/users/:id/favorites", getFavorites);
 app.post("/api/user/:id/favorites", saveFavorites);
-app.delete("/api/user/:id/favorites", deleteFavorites);
+app.delete("/api/user/:id/favorites/:animalId", deleteFavorites);
 
 
 app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`));
