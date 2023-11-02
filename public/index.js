@@ -5,8 +5,6 @@ function displayCards(animals) {
     animals.forEach(animal => {
         const card = generateCard(animal);
         container.appendChild(card);
-
-
     });
 };
 
@@ -30,10 +28,15 @@ function generateCard(animal) {
     <div class="animal-image container" >
         <img class="image" src="${animal.thumbnail}" alt="${animal.summary}">
         <div class="middle">
-            <button class="text">Adopt Me!</button>
+            <a href="animal-profile.html?animalId=${animal.animal_id}">
+            <button class="adopt-me">
+            Adopt Me!
+            </button>
+            </a>
             </div>
     </div>`
-    
+
+
     let heartImage = card.querySelector('.heart');
     heartImage.addEventListener('click', () => {
         if (animal.isfavorite) {

@@ -100,7 +100,7 @@ module.exports = {
 
         ('Scout', 'male', 'Domestic Short Hair', '01/13/2020', '/images/scout.png', null, null, null, 'Scout was found left in a box with his siblings when he was only 2 weeks old! He is a friendly, playful, and cuddly kitty that would love to find his forever home. He does well with other animals and would prefer to live with another cat. Scout is up to date with her vaccines, combo tested (FIV/FELV), spayed, and microchipped. He does well with children and is the perfect pet for those looking for their new best friend. Scout would be the perfect addition to any family.', 2), 
 
-        ('Dakota', 'gelding', 'Mustang (Tribal/reservation)', '01/01/2009', '/images/dakota.png', '14.0 hh (est.)', 'Liver Chestnut Appaloosa', '950 lbs (est.)', 'Dakota came to Weatherford Animal Sanctuary in September 2021 from a distressed sanctuary. He ended up at the sanctuary after his loving owner developed terminal cancer. He is a handsome tribal mustang from the Dakotas. Dakota was fearful and lacked confidence, and he was difficult to catch. He was defensive in that if anyone approached from the side or behind too quickly, he would turn his hind end to you and on occasion, he kicked out. He learned quickly that was not ok. When we picked him up, he had extensive heel cracks that extended into his coronary band in both hind hooves. They were painful. Soon after arrival, he got the works, hoof and dental care, vaccines, deworming, and a microchip. During his exam our vet discovered he could not see out of his left eye. Further evaluation showed his lens was detached, which certainly explained his concerns with people approaching from the side or behind. With more understanding of his vision issue, we learned how to better support him. After he was moved to the herd, he became very herdbound and had a strong pullback issue when taking him away from his herdmates. With some changes, it is improved some, but it resurfaces when there are changes or his confidence wanes. Once he is one-on-one, he recovers nicely, but this is still a work in progress.  Dakota was introduced to a saddle, and he handled it very well.  He had occasional dips in his confidence, but they were more related to activity in his surroundings.  As we get settled into AAE''s new property, we will do more saddle work and work away from the herd.Dakota is a very sweet, social guy. He seeks attention and enjoys grooming and interaction. He is good with the vet and farrier. He loads fairly well, and travels fine. Dakota is current with dental and hoof care, vaccines, and deworming, and he has a microchip. Dakota is looking for an experienced horse person to continue building his confidence and enjoy the cool little guy he is. 
+        ('Dakota', 'gelding', 'Mustang (Tribal/reservation)', '01/01/2009', '/images/dakota-thumbnail.jpg', '14.0 hh (est.)', 'Liver Chestnut Appaloosa', '950 lbs (est.)', 'Dakota came to Weatherford Animal Sanctuary in September 2021 from a distressed sanctuary. He ended up at the sanctuary after his loving owner developed terminal cancer. He is a handsome tribal mustang from the Dakotas. Dakota was fearful and lacked confidence, and he was difficult to catch. He was defensive in that if anyone approached from the side or behind too quickly, he would turn his hind end to you and on occasion, he kicked out. He learned quickly that was not ok. When we picked him up, he had extensive heel cracks that extended into his coronary band in both hind hooves. They were painful. Soon after arrival, he got the works, hoof and dental care, vaccines, deworming, and a microchip. During his exam our vet discovered he could not see out of his left eye. Further evaluation showed his lens was detached, which certainly explained his concerns with people approaching from the side or behind. With more understanding of his vision issue, we learned how to better support him. After he was moved to the herd, he became very herdbound and had a strong pullback issue when taking him away from his herdmates. With some changes, it is improved some, but it resurfaces when there are changes or his confidence wanes. Once he is one-on-one, he recovers nicely, but this is still a work in progress.  Dakota was introduced to a saddle, and he handled it very well.  He had occasional dips in his confidence, but they were more related to activity in his surroundings.  As we get settled into AAE''s new property, we will do more saddle work and work away from the herd.Dakota is a very sweet, social guy. He seeks attention and enjoys grooming and interaction. He is good with the vet and farrier. He loads fairly well, and travels fine. Dakota is current with dental and hoof care, vaccines, and deworming, and he has a microchip. Dakota is looking for an experienced horse person to continue building his confidence and enjoy the cool little guy he is. 
         In general, there is a lot of activity around Weatherford Animal Sanctuary including foot traffic in and out of paddock/pasture areas, mucking with wheelbarrows, grooming and care activities, weekly farrier visits. There are resident dogs, cats, chickens, and mini horses, as well as various wildlife including frequent turkeys and squirrels in and around paddock/pasture areas. Our sanctuary is situated on the corner of a busy road with high speed vehicles, trucks, and sirens. Tractors are used in and around pasture/paddock areas, trucks deliver feed, and a squeeze is occasionally used for unloading hay. Neighbors have weekly gardeners that utilize various power tools, and children that are active in yards adjacent to some stall/paddock areas. Therefore horses at Weatherford Animal Sanctuary are accustomed to a more active environment as opposed to a quiet or sterile environment.', 3),
 
         ('Red', 'gelding', 'Grade', '2007 (est.)', '/images/red.png', '15.1 hh (est.)', 'Red Dun', '1,100 lbs (est.)', 'Many of you may remember the incredibly handsome Red. Red originally came to Weatherford Animal Sanctuary way back in the summer of 2015. He came from another rescue after spending several months at the Monty Roberts International Learning Center (MRILC) where he participated as a project horse during MRILC courses. He was completely untouchable when he arrived, and it took tremendous time to overcome fear and accept a simple touch by a human. Red has some deep-seated mistrust of humans, and he really did not want to be in a world with humans. With an immense amount of work, he tried hard to understand. He learned basic groundwork and long-lining, and he was introduced to a saddle (no rider). Red has received hoof and dental care, deworming, and vaccines. He spent several months with a foster interested in country riding, where he learned more extensive groundwork, and he was exposed to a variety of objects and activities, but his foster never felt Red developed enough confidence to become the horse he needed. Red came back to the rescue. Several months later, Red was adopted by a young man in Fall of 2016. Red continued building trust and learning about saddle work, even carrying his young rider a few times. However, due to the realities of work and finances that come with adulthood, his young adopter was unable to continue to meet Red''s needs. Sadly, Red sat in his pasture with other horses and no significant human attention for many months before we were called to pick him up in January 2018. Red had regressed, and much of the progress he would made was gone. None of Red''s vet care had been maintained, so all was updated again including dental and hoof care, vaccines, and deworming, and he got a microchip, too. Back at our rescue for only about a month, Red suffered a pasture accident rupturing his peroneus teritius tendon. This usually happens when the hock is hyperextended, likely in a quick turn or change of direction. Thankfully, it was a soft tissue injury, and not the ghastly fracture it appeared to be. Red was on stall rest for more than a year and appears to have heal well. Research shows a good percentage of horses recover to the same level of exercise, and he appears to be back to his normal. 
@@ -293,7 +293,7 @@ module.exports = {
 
     },
 
-    getFavorites: (req, res) => {   
+    getFavorites: (req, res) => {
         const userId = req.params.id;
 
         sequelize.query(`
@@ -316,7 +316,7 @@ module.exports = {
     },
 
     saveFavorites: (req, res) => {
-        
+
         sequelize.query(`
 
         INSERT INTO favorites (animal_id, user_id) VALUES (${req.body.animalId}, ${req.params.id})
@@ -333,7 +333,6 @@ module.exports = {
     },
 
     deleteFavorites: (req, res) => {
-        console.log('body', req.body)
         const animalId = req.params.animalId;
         const userId = req.params.id;
         console.log(animalId, userId);
@@ -344,6 +343,39 @@ module.exports = {
     
         `).then((dbRes) => {
             res.status(200).send(dbRes)
+        }).catch((error) => {
+            res.status(500).send(error)
+        })
+    },
+
+    getProfile: (req, res) => {
+        const animalId = req.params.id;
+        const userId = 1;
+        sequelize.query(`
+        
+        SELECT 
+        CASE 
+            WHEN user_id = ${userId} THEN true
+        ELSE false
+    END AS isFavorite,
+    * FROM animals
+    JOIN species ON animals.species_id = species.species_id
+    LEFT JOIN favorites on animals.animal_id = favorites.animal_id
+    WHERE animals.animal_id = ${animalId}
+        
+        `).then((dbRes) => {
+            if (dbRes[0].length == 0){
+                res.status(404).send();
+            }else {
+                const animal = dbRes[0][0];
+                sequelize.query(`
+                SELECT * FROM pictures WHERE animal_id = ${animalId}
+                `).then((pictureResult) => {
+                    animal.pictures = pictureResult[0];
+                    res.status(200).send(animal);
+                })
+            }
+            
         }).catch((error) => {
             res.status(500).send(error)
         })

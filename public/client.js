@@ -19,9 +19,13 @@ const getFavorites = () => {
 };
 
 const saveFavorites = () => {
-    axios.post("http://localhost:8000/api/user/1/favorites", )
+    return axios.post("http://localhost:8000/api/user/1/favorites", );
 };
 
 const deleteFavorites = () => {
-    axios.delete("http://localhost:8000/api/user/1/favorites", )
+    return axios.delete("http://localhost:8000/api/user/1/favorites", );
 };
+
+const getProfile = (id) => {
+    return axios.get("http://localhost:8000/api/animals/" + id);
+}

@@ -131,6 +131,9 @@ margin: 0px;
     flex-wrap: wrap;
     gap: 75px;
     justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
 }
 
 .animal-card {
@@ -206,30 +209,6 @@ div.animal-image>img {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-#banner-container {
-    position: relative;
-    text-align: center;
-    
-}
-
-#cat-page-banner {
-    width: 100%;
-    border-bottom: 3px rgb(169, 190, 178) ridge;
-    min-height: 400px;
-}
-
-#horse-page-banner {
-    width: 100%;
-    border-bottom: 3px rgb(169, 190, 178) ridge;
-    min-height: 400px;
-}
-
-#dog-page-banner {
-    width: 100%;
-    border-bottom: 3px rgb(169, 190, 178) ridge;
-    min-height: 400px;
-    
-}
 
 #dog-banner-text {
     position: absolute;
@@ -272,7 +251,7 @@ div.animal-image>img {
     opacity: 2;
 }
 
-.text {
+.adopt-me {
     background-color: rgb(169, 190, 178);
     color: rgb(3, 2, 2);
     font-size: 16px;
@@ -281,6 +260,77 @@ div.animal-image>img {
     border: ridge 2px white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+}
+
+#about-page {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: rgb(70, 73, 71);
+    margin-bottom: 0px;
+}
+
+#about-img{
+    width: 25%;
+    margin-right: 150px;
+    border: ridge 5px rgb(169, 190, 178);
+    border-radius: 10px;
+    align-self: flex-end;
+    margin-bottom: 0px;
+}
+
+#flex-for-about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.text-box {
+    width: 500px;
+    height: 295px;
+    margin-left: 150px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#week-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(70, 73, 71);
+    margin-bottom: 0px;
+}
+
+#animal-name {
+    font-size: 20px;
+}
+
+#animal-breed {
+    font-size: 20px;
+}
+
+#animal-name2 {
+    font-size: 20px;
+}
+
+#animal-breed2 {
+    font-size: 20px;
+}
+
+#animal-name3 {
+    font-size: 20px;
+}
+
+#animal-breed3 {
+    font-size: 20px;
+}
+
+#animals-of-week {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 @media only screen and (min-width: 450px) {
