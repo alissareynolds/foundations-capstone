@@ -93,15 +93,12 @@ a:hover {
 }
 
 .heart {
-width: 40px;
+width: 35px;
+align-self: flex-start;
+padding-bottom: 0px;
+margin: 0px;
 }
 
-.top-line{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-}
 .centered {
     position: absolute;
     top: 70%;
@@ -167,21 +164,13 @@ width: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#top-line {
-display: flex;
-flex-direction: row;
-align-items: end;
-gap: 40px;
-margin: 0px;
-}
-
 #heart-off {
     width: 40px;
 }
 
 .animal-name {
     margin: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
 
 .animal-breed {
@@ -216,8 +205,6 @@ div.animal-image>img {
     color: #1e7558;
     background-color: rgba(0, 0, 0, 0.1);
 }
-
-
 
 #banner-container {
     position: relative;
@@ -255,7 +242,6 @@ div.animal-image>img {
     color: rgb(169, 190, 178);
     text-shadow: 2px 2px white;
 }
-
 
 .container {
     position: relative;

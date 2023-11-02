@@ -23,10 +23,8 @@ function generateCard(animal) {
     card.innerHTML = `
     
     <div class="animal-info">
-    <div class="top-line">
-    <h4 class="animal-name action">${animal.name}</h4>
     <img id="${animal.animal_id}" src="${heartSrc}" class="heart">
-        </div>
+    <h4 class="animal-name action">${animal.name}</h4>
         <p class="animal-breed">${animal.breed}</p>
     </div>
     <div class="animal-image container" >
