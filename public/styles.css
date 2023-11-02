@@ -333,6 +333,39 @@ div.animal-image>img {
     padding-bottom: 30px;
 }
 
+.profile-thumbnail {
+    margin-left: 33%;
+    width: 35%;
+    border: 5px ridge rgb(169, 190, 178);
+    border-radius: 10px;
+}
+
+.profile-name {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(70, 73, 71);
+}
+
+.profile-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#profile-container {
+    border: 15px rgb(169, 190, 178) ridge;
+    background-color: rgb(245, 231, 239);
+    margin: 60px;
+}
+
+.profile-info {
+font-size: 20px;
+padding-left: 50px;
+padding-right: 50px;
+}
+
 @media only screen and (min-width: 450px) {
     body {
         display: grid;

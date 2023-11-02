@@ -20,12 +20,17 @@ function generateProfile(animal) {
     const profile = document.createElement('article');
    
     profile.innerHTML = `
-    
-    <img src="${animal.thumbnail}">
-    <h2 class="profile-name">${animal.name}</h2>
-    <h4 class="profile-breed">${animal.breed}</h4>
-    <p class="profile-info">${animal.info}</p>
 
+    <h1 class="profile-name">${animal.name}</h1>
+    <img class="profile-thumbnail" src="${animal.thumbnail}">
+    <section class="profile-bar"><h3 class="profile-breed">${animal.breed}</h3>
+    <h4 class="profile-birthdate">${animal.birthdate}</h4>
+    <h4 class="profile-color">${animal.color}</h4>
+    <h4 class="profile-height">${animal.height}</h4>
+    <h4 class="profile-weight">${animal.weight}</h4></section>
+    
+    <p class="profile-info">${animal.info}</p>
+    
     `
 
     animal.pictures.forEach((picture) => {
